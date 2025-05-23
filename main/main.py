@@ -72,13 +72,13 @@ def downloads():
             setvoice()
 
 
-image_icon=PhotoImage(file="images/speak.png")
+image_icon=PhotoImage(file="main\images\speak.png")
 window.iconphoto(False,image_icon)
 
 Top_frame=Frame(window,bg="white",width=900,height=100)
 Top_frame.place(x=0,y=0)
 
-Logo=PhotoImage(file="images/speaker logo.png")
+Logo=PhotoImage(file="main\images\speaker_logo.png")
 Label(Top_frame,image=Logo,bg="white").place(x=10,y=5)
 
 Label(Top_frame,text="TEXT TO SPEECH",font="arial 20 bold",bg="white",fg="black").place(x=100,y=35)
@@ -100,11 +100,11 @@ speed_combobox=Combobox(window,values=['Fast','Normal','Slow'],font="arial 14",s
 speed_combobox.place(x=730,y=200)
 speed_combobox.set('Normal')
 
-imageicon=PhotoImage(file="images/speak.png")
+imageicon=PhotoImage(file="main\images\speak.png")
 btn=Button(window,text="speak",image=imageicon,width=130,font="arial 14 bold",command=speaknow)
 btn.place(x=550,y=280)
 
-imageicon2=PhotoImage(file="images/download.png")
+imageicon2=PhotoImage(file="main\images\download.png")
 save=Button(window,text="Save",image=imageicon2,width=130,bg="#39c790",font="arial 14 bold",command=downloads)
 save.place(x=730,y=280)
 
